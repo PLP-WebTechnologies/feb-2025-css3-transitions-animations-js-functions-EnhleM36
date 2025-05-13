@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive PCR Tutorial</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+        <header>
+            <h1>Polymerase Chain Reaction (PCR)</h1>
+            <p class="subtitle">The Revolutionary DNA Amplification Technique</p>
+        
+        
+            <div class="preference-container">
+                <label for="theme-toggle">Dark Mode:</label>
+                <input type="checkbox" id="theme-toggle" class="theme-toggle">
+            
+                <label for="animation-toggle">Animations:</label>
+                <input type="checkbox" id="animation-toggle" class="animation-toggle">
+            </div>
+        </header>
+
+        <main class="container">
+            <section id="introduction">
+                <h2>Introduction to PCR</h2>
+                <div class="animated-dna-helix">
+                    <div class="dna-strand"></div>
+                    <div class="dna-strand"></div>
+                </div>
+            
+                <p>Polymerase Chain Reaction (PCR) is a revolutionary technique in molecular biology used to make millions to billions of copies of a specific DNA segment.</p>
+            </section>
+
+            <section id="how-pcr-works">
+                <h2>PCR Steps</h2>
+                <div class="pcr-steps">
+                    <div class="step denaturation">
+                        <h3>Denaturation</h3>
+                        <div class="step-icon heat-wave"></div>
+                    </div>
+                    <div class="step annealing">
+                        <h3>Annealing</h3>
+                        <div class="step-icon cool-down"></div>
+                    </div>
+                    <div class="step extension">
+                        <h3>Extension</h3>
+                        <div class="step-icon dna-copy"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interactive-simulation">
+                <h2>PCR Simulation</h2>
+                <div id="simulation-container">
+                    <div id="cycle-display">Cycles: <span id="cycle-count">0</span></div>
+                    <button id="start-simulation" class="pulse-button">Start Simulation</button>
+                    <div id="simulation-feedback" class="feedback-area"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 PCR Interactive Tutorial</p>
+        </footer>
+
+        <script src="script.js"></script>
+        </body>
+    </html>
